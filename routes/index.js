@@ -22,4 +22,9 @@ router.get('/services', (req, res, next) => {
   res.render('index', { title: 'Services' });
 });
 
+router.get('/favourite-things', (req, res, next) => {
+  res.render('index', { title: 'Favourite Things' });
+});
+
+
 module.exports = router;

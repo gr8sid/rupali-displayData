@@ -15,7 +15,10 @@ router.get('/', (req, res, next) => {
         }
         else {
             console.log(favouriteThingsList);
-           
+            res.render('favouriteThings/index', {
+                title: 'Favourite Things List',
+                favouriteThingsList: favouriteThingsList
+            });
         }
     })
 });
