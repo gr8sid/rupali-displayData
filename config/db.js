@@ -1,4 +1,4 @@
 module.exports = {
     // local MongoDB deployment 
-    "URI":"mongodb://localhost/demo"
+    "URI":"mongodb://localhost/sidharth"
 }

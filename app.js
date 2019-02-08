@@ -14,13 +14,13 @@ mongoose.connect(DB.URI);
 let mongoDB = mongoose.connection;
 mongoDB.on('error', console.error.bind(console, 'Connection Error:'));
 mongoDB.once('open', ()=> {
-  console.log("Connected to MongoDB...");
+  console.log("Connected to MongoDB (Sidharth)...");
 })
 
 // route setup
 let indexRouter = require('./routes/index');
 let contactRouter = require('./routes/contact');
-
+let favouriteRouter = require('./routes/favouriteThings');
 let app = express();
 
 // view engine setup
@@ -36,6 +36,7 @@ app.use(express.static(path.join(__dirname, 'node_modules')));
 
 app.use('/', indexRouter);
 app.use('/contact-list', contactRouter);
+app.use('/favourite-things', favouriteRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
