@@ -1,5 +1,5 @@
 {
-  "name": "comp308-w2019-lesson4b",
+  "name": "comp308-w2019-lesson4b-mlab-cloudserver",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -18,7 +18,7 @@
     "morgan": "~1.9.0",
     "popper.js": "^1.14.6"
   },
-  "description": "MongoDB and Mongoose Demo",
+  "description": "mLab and Mongoose Demo",
   "main": "server.js",
   "author": "Sidharth Choudhary",
   "license": "ISC",
@@ -32,10 +32,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gr8sid/comp308-W2019-Lesson4B.git"
+    "url": "git+https://github.com/gr8sid/comp308-W2019-Lesson4B-Cloud-mLab.git"
   },
   "bugs": {
-    "url": "https://github.com/gr8sid/comp308-W2019-Lesson4B/issues"
+    "url": "https://github.com/gr8sid/comp308-W2019-Lesson4B-Cloud-mLab/issues"
   },
-  "homepage": "https://github.com/gr8sid/comp308-W2019-Lesson4B#readme"
+  "homepage": "https://github.com/gr8sid/comp308-W2019-Lesson4B-Cloud-mLab#readme"
 }
