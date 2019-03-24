@@ -1,5 +1,3 @@
 module.exports = {
-    // local MongoDB deployment 
-    //"URI":"mongodb://localhost/sidharth"
-    "URI":"mongodb://sid:abc123@ds058739.mlab.com:58739/sidharth"
-}
+  URI: "mongodb://rupali1:abc123@ds060977.mlab.com:60977/rupali"
+};

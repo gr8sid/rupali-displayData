@@ -1,12 +1,14 @@
-let mongoose = require('mongoose');
+let mongoose = require("mongoose");
 
 // create a model class
-let favouriteSchema = mongoose.Schema({
-    name: String,
-    description: String
-},
-{
+let favouriteSchema = mongoose.Schema(
+  {
+    firstname: String,
+    lastname: String
+  },
+  {
     collection: "favouriteThings"
-});
-                                                                                        
-module.exports = mongoose.model('sidharth', favouriteSchema);
+  }
+);
+
+module.exports = mongoose.model("rupali", favouriteSchema);

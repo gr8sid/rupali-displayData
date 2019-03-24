@@ -1,5 +1,5 @@
 {
-  "name": "comp308-w2019-lesson4b-mlab-cloudserver",
+  "name": "DisplayTable",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -20,7 +20,7 @@
   },
   "description": "mLab and Mongoose Demo",
   "main": "server.js",
-  "author": "Sidharth Choudhary",
+  "author": "Rupali Bali",
   "license": "ISC",
   "devDependencies": {
     "@types/body-parser": "^1.17.0",
@@ -29,13 +29,5 @@
     "@types/mongoose": "^5.3.12",
     "@types/morgan": "^1.7.35",
     "@types/node": "^10.12.18"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gr8sid/comp308-W2019-Lesson4B-Cloud-mLab.git"
-  },
-  "bugs": {
-    "url": "https://github.com/gr8sid/comp308-W2019-Lesson4B-Cloud-mLab/issues"
-  },
-  "homepage": "https://github.com/gr8sid/comp308-W2019-Lesson4B-Cloud-mLab#readme"
+  }
 }

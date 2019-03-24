@@ -1,11 +1,55 @@
-<% include ./partials/header.ejs %>
-  <div class="container">
-    <div class="jumbotron">
-      <h1 class="display-4">Welcome to Sidharth's <%= title%> page</h1>
-     <% if (title == "Favourite Things"){ %>
-<a class="btn btn-primary" href="/favourite-things-list" role="button"> Favourite-Things List</a>
-<%     }   %>
-   </div>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
 
-<% include ./partials/footer.ejs %>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    <%= title %>
+  </title>
+  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="Content/app.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">Rupali's Work</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+    <div class="container">
+            <h1> Fetching Data from mLab</h1>
+        <div class="row">
+            <div class="col-md-offset-3 col-md-6"></div>
+        
+        <br>
+        <table class="table table-bordered table-striped table-hover">
+           
+           <!-- Header Row --> 
+           <tr>
+                <th class="text-centre"> ID </th>
+                <th class="text-centre"> First Name </th>
+                <th class="text-centre"> Last Name </th>
+            </tr>
+            <% for(let count = 0; count < favouriteThingsList.length; count ++) 
+            { %>
+            <tr>
+                <th class="text-centre"> <%= (count+1) %> </th>
+                <th class="text-centre" style="font-weight:normal"> <%= favouriteThingsList[count].firstname %></th>
+                <th class="text-centre" style="font-weight:normal"> <%= favouriteThingsList[count].lastname %></th>
+            </tr>
+            <% } %>
+            </table>
+        </div>
+    </div>
+<script src="jquery/dist/jquery.min.js"></script>
+  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="Scripts/app.js"></script>
+</body>
+
+</html>
